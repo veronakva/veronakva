@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular.eot');
+    src: url('../fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-medium.eot');
+    src: url('../fonts/montserrat-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-medium.woff2') format('woff2'),
+         url('../fonts/montserrat-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair-display';
+    src: url('../fonts/playfairdisplay-regular.eot');
+    src: url('../fonts/playfairdisplay-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-regular.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair_display';
+    src: url('../fonts/playfairdisplay-italic.eot');
+    src: url('../fonts/playfairdisplay-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-italic.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair-display';
+    src: url('../fonts/playfairdisplay-bold.eot');
+    src: url('../fonts/playfairdisplay-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-bold.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    color: #AE7C78;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.list-reset {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #AE7C78;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.container {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header {   
+    display: flex;
+    align-items: center; 
+    position: relative;
+    margin-top: 26px;
+    min-height: 64px;
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+}
+
+.header-logo {
+    position: absolute;
+    left: 46%;
+    width: 100px;
+    height: 32.28px;
+}
+
+.header-navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-navigation-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+}
+
+.header-navigation-list li:nth-child(3) {
+    margin-right: 62px;
+}
+
+.header-navigation-list li:nth-child(4) {
+    margin-left: 62px;
+}
+
+.promo {
+    display: flex;
+    min-height: 544px;
+    padding-top: 82px;
+    padding-bottom: 48px;
+}
+
+.promo div:nth-child(1) {
+    width: 384px;
+    padding-right: 23px;
+}
+
+.promo-title {
+    margin: 0;
+    padding-bottom: 24px;
+
+    font-family: 'Playfair-display', 'Times New Roman', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 58.65px;
+}
+
+.promo-title span {
+    font-family: 'Playfair_display', 'Times New Roman', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.promo-txt {
+    margin: 0;
+    padding-bottom: 64px;
+
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.promo-catalog-button, .popular-order-btn {
+    display: flex;
+    width: 285px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #D89999;
+}
+
+.promo-catalog-button span, .popular-order-btn span {
+    margin: auto;
+
+    color: #fff;
+}
+
+.promo div:nth-child(2) {
+    display: flex;
+}
+
+.promo-img-left {
+    display: block;
+    width: 386px;
+    padding-top: 58px;
+    padding-right: 15px;
+}
+
+.promo-img-right {
+    display: block;
+    width: 387px;
+    outline: none;
+}
+
+.info-list-item dt {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.info-list-item:nth-child(1)::before {
+    content: url('../images/delivery_icon.svg');
+}
+
+.info-list-item:nth-child(2)::before {
+    content: url('../images/bouquet_icon.svg');
+}
+
+.info-list-item:nth-child(3)::before {
+    content: url('../images/photo_icon.svg');
+}
+
+.popular-title {
+    font-family: 'Playfair_display', 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 47.99px;
+}
+
+.popular-bouquet-title, .popular-bouquet-price {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.popular-slider-controls button {
+    background-color: transparent;
+    border: none;
+}
+
+.popular-slider-controls>button>svg {
+    fill: #AE7C78;
+}
+
+.catalog-section-title {
+    font-family: 'Playfair-display', 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 47.99px;
+    color: #fff;
+}
+
+.catalog-section-subtitle {
+    color: #fff;
+}
+
+.catalog-section-container {
+    background-color: rgba(174, 124, 120, 0.6);
+    border-radius: 10px;
+}
